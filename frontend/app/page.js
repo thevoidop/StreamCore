@@ -91,7 +91,7 @@ export default function Home() {
     if (abortRef.current) abortRef.current.abort();
     abortRef.current = new AbortController();
 
-    fetch("http://localhost:8000/video", {
+    fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}`, {
       headers: { Range: `bytes=${start}-${end}` },
       signal: abortRef.current.signal,
     })
