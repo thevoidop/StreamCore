@@ -108,7 +108,7 @@ Each layer is implemented manually with full awareness of what's happening at ev
 ## Project Structure
 
 ```
-streaming-player/
+StreamCore/
 ├── backend/
 │   ├── server.py           # Python range-request HTTP server
 │   └── video.mp4           # Fragmented MP4 (see setup below)
